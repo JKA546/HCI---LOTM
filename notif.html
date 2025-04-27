@@ -1,0 +1,234 @@
+<!-- logout.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Notification</title>
+  <style>
+    body {
+      margin: 0;
+      background: url('Log-Out%20Sequence%20(2).png') no-repeat center center;
+      background-size: contain;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+      position: relative;
+      font-family: Arial, sans-serif;
+    }
+
+    .sidebar {
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      width: 260px;
+      background-color: rgba(255, 255, 255, 0.75);
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      justify-content: center;
+    }
+
+    .user-info img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+    }
+
+    .button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .logout {
+      background: linear-gradient(to right, #00f2fe, #4facfe);
+      color: white;
+    }
+
+    .settings {
+      background-color: rgba(255, 255, 255, 0.6);
+      border: 1px solid #ccc;
+      color: black;
+    }
+
+    .back {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      padding: 10px 15px;
+      background-color: #ffffffcc;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      text-decoration: none;
+      color: #333;
+    }
+
+    .back:hover {
+      background-color: #ddd;
+    }
+
+    .map-container {
+      width: 100%;
+      height: 100vh;
+      background: url('https://i.redd.it/izf8jzw8vkte1.png') no-repeat center;
+      background-size: cover;
+      z-index: -1;
+    }
+
+    .logo {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 80px;
+    }
+
+    .top-right {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .search {
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+
+    .profile {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: #555;
+    }
+
+    .clickable-area {
+      position: absolute;
+      top: 73%;
+      left: 78%;
+      width: 2.75%;
+      height: 8.5%;
+      cursor: pointer;
+      opacity: 0.4;
+      transition: opacity 0.2s;
+    }
+
+    .clickable-area:hover {
+      opacity: 0.8;
+    }
+
+    /* Notification Box Styles */
+    .notification-box {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -30%);
+      background: rgba(255, 255, 255, 0.85);
+      border: 3px solid gray;
+      border-radius: 15px;
+      padding: 20px;
+      width: 320px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: left;
+    }
+
+    .notif-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      gap: 10px;
+      cursor: pointer;
+    }
+
+    .notif-item input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+    }
+
+    .notif-item span {
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    .notif-item p {
+      margin: 5px 0 0 0;
+      font-size: 12px;
+      color: #333;
+    }
+
+    .main-item {
+      justify-content: space-between;
+    }
+
+    .arrow-btn {
+      background: #66ccff;
+      border: none;
+      padding: 5px 8px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 16px;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 🛎 Notification Box (Middle) -->
+  <div class="notification-box">
+
+    <label class="notif-item main-item">
+      <input type="checkbox" class="notif-checkbox">
+      <span>Enable Notifications</span>
+      <a href="LOTM_Map (1).html" class="arrow-btn">➤</a>
+    </label>
+
+    <label class="notif-item">
+      <input type="checkbox" class="notif-checkbox">
+      <div>
+        <span>Schedule Notifications</span>
+        <p>Set a preferred time to receive alerts.</p>
+      </div>
+    </label>
+
+    <label class="notif-item">
+      <input type="checkbox" class="notif-checkbox">
+      <div>
+        <span>Early Notifications</span>
+        <p>Get notified ahead of an event or a scheduled task.</p>
+      </div>
+    </label>
+
+    <label class="notif-item">
+      <input type="checkbox" class="notif-checkbox">
+      <div>
+        <span>Manage Notifications</span>
+        <p>Edit or remove previously set alerts.</p>
+      </div>
+    </label>
+
+  </div>
+
+  <div class="map-container">
+    <img src="https://i.redd.it/5eumyqib0ete1.png" class="logo" alt="Logo" />
+  </div>
+
+</body>
+</html>
