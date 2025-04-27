@@ -1,0 +1,150 @@
+<!-- logout.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Logout Panel</title>
+  <style>
+    body {
+      margin: 0;
+      background: url('Log-Out%20Sequence%20(2).png') no-repeat center center;
+      background-size: contain;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+    }
+    .sidebar {
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      width: 260px;
+      background-color: rgba(255, 255, 255, 0.75);
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+    }
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      justify-content: center;
+    }
+
+    .user-info img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+    }
+
+    .button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .logout {
+      background: linear-gradient(to right, #00f2fe, #4facfe);
+      color: white;
+    }
+
+    .settings {
+      background-color: rgba(255, 255, 255, 0.6);
+      border: 1px solid #ccc;
+      color: black;
+    }
+
+    .back {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      padding: 10px 15px;
+      background-color: #ffffffcc;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      text-decoration: none;
+      color: #333;
+    }
+
+    .back:hover {
+      background-color: #ddd;
+    }
+
+    .map-container {
+      width: 100%;
+      height: 100vh;
+      background: url('https://i.redd.it/izf8jzw8vkte1.png') no-repeat center;
+      background-size: cover;
+    }
+    /* Top-left logo now */
+    .logo {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 80px;
+    }
+    /* Top-right search and profile */
+    .top-right {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .search {
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+    .profile {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: #555;
+      top: 10px;
+      left: 10px;
+      href: profile.html;
+    }
+    /* Clickable area styles */
+    .clickable-area {
+      position: absolute;
+      top: 73%; /* Adjust as needed */
+      left: 78%; /* Adjust as needed */
+      width: 2.75%; /* Adjust width and height */
+      height: 8.5%;
+      cursor: pointer;
+      opacity: 0.4;
+      transition: opacity 0.2s;
+    }
+    .clickable-area:hover {
+      opacity: 0.8;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="sidebar">
+      <div class="user-info">
+        <img src="profile_samp.png" alt="User Icon">
+        <span>Username</span>
+      </div>
+      <a href="coming_soon.html" target="_self">
+      <button class="button settings">Notification Settings</button></a>
+      <a href="logsign.html" target="_blank"><button class="button logout">LOGOUT</button></a>
+      <a href="LOTM_Map (1).html" target="_self">Back to Map</a>
+    </div>
+  </div>
+  <div class="map-container">
+    <!-- Top Left Logo -->
+    <img src="https://i.redd.it/5eumyqib0ete1.png" class="logo" alt="Logo" />
+</body>
+</html>
