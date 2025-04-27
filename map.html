@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Map</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .map-container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: url('https://i.redd.it/izf8jzw8vkte1.png') no-repeat center;
+      background-size: cover;
+    }
+    /* Top-left logo now */
+    .logo {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 80px;
+    }
+    /* Top-right search and profile */
+    .top-right {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .search {
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+    .profile {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: #555;
+      top: 10px;
+      left: 10px;
+      href: profile.html;
+    }
+    /* Clickable area styles */
+    .clickable-area {
+      position: absolute;
+      top: 73%; /* Adjust as needed */
+      left: 78%; /* Adjust as needed */
+      width: 2.75%; /* Adjust width and height */
+      height: 8.5%;
+      cursor: pointer;
+      opacity: 0.4;
+      transition: opacity 0.2s;
+    }
+    .clickable-area_nigg {
+      position: absolute;
+      top: 79%; /* Adjust as needed */
+      left: 40%; /* Adjust as needed */
+      width: 4%; /* Adjust width and height */
+      height: 9%;
+      cursor: pointer;
+      opacity: 0.4;
+      transition: opacity 0.2s;
+    }
+    .clickable-area:hover {
+      opacity: 0.8;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="map-container">
+    <!-- Top Left Logo -->
+    <img src="https://i.redd.it/5eumyqib0ete1.png" class="logo" alt="Logo" />
+    
+    <!-- Top Right Search/Profile -->
+    <div class="top-right">
+      <input class="search" type="text" placeholder="Search..." />
+      <a href="profile.html">
+      <img src="profile_samp.png" class="profile" alt="profile""></a>
+    </div>
+    
+    <!-- Clickable Area -->
+    <a href="interior/floor1.html" class="clickable-area" title="College of Information Science" target="_blank"></a>
+    <a href="coming_soon.html" class="clickable-area_nigg" title="Admin Building"></a>
+
+  </div>
+</body>
+</html>
