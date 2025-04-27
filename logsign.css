@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MaPS Login</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: url('maplog.png') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-box {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      width: 300px;
+      color: #fff;
+    }
+
+    .login-box img {
+      width: 50px;
+      margin-bottom: 10px;
+    }
+
+    .login-box h2 {
+      margin-bottom: 20px;
+      font-size: 22px;
+      color: #fff;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .login-box .login-button {
+      width: 100%;
+      background-color: #d81b60;
+      color: white;
+      padding: 10px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .login-box .login-button:hover {
+      background-color: #c2185b;
+    }
+
+    .login-box .forgot {
+      margin-top: 10px;
+      font-size: 13px;
+      color: #555;
+    }
+
+    .login-box .register-button {
+      width: 100%;
+      margin-top: 15px;
+      background-color: #ec407a;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .login-box .register-button:hover {
+      background-color: #white;
+    }
+
+    .reg {
+  color: white;
+  text-decoration: none;
+}
+  </style>
+</head>
+<body>
